@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <script>
+            function disablesubmit()
+            {
+                document.getElementById("submit").disabled = true;
+            }
+
+            function activateButton(element) 
+            {
+                if(element.checked) 
+                {
+                    document.getElementById("submit").disabled = false;
+                }
+                else  
+                {
+                    document.getElementById("submit").disabled = true;
+                }
+            }
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reglogin.css">
+        </head>
+        <body onload="disableSubmit()" background="images/regback.jpg" style="background-size:cover;background-repeat:no-repeat;width:100%;height:80%">
+            <div class="hi">
+            <div class="topnav">
+                <table class="one">
+                    <tr>
+                <th><img src="images/tradz logo.png" style="width:80px;height:80px;border-radius:20%;"></img></th>
+                <th><p style="color:#fff;font-size:50px;font-family:Monotype Corsiva;font-style:italic;">Tradz</p></th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th><a href="Home.html">Home</a></th>
+                <th><a href="loginpage.html">Login</a></th>
+                <th><a href="About.html">About</a></th>
+                </tr> 
+                </table>                             			
+            </div>
+        <div  class="reglog">
+            <p style="font-size:40px;font-family:Comic Sans;text-align:center;">Register</p>
+            <form method="post" action="loginpage.html" >
+                <table class="three">
+                    <tr class="reglog">
+                        <th>Name</th>
+                        <th><input type="text" class="regtext" name="uname"></th>
+                        <th>&emsp;&emsp;&emsp;&emsp;</th>
+                        <th>Email Id</th>
+                        <th><input type="text" class="regtext" name="email"></th>
+                    </tr>
+                    <tr class="reglog">
+                        <th>Password</th>
+                        <th><input type="password" class="regpass" name="pass"></th>
+                        <th>&emsp;&emsp;&emsp;&emsp;</th>
+                        <th>Confirm Password</th>
+                        <th><input type="password" class="regpass" name="confirmpass"></th>
+                    </tr>
+                    <tr class="reglog">
+                        <th>Gender</th>
+                        <th><input type="radio" class="regpass" name="Gender"  id="Male" value="Male"><label for="Male">Male</label>&emsp;&emsp;
+                            <input type="radio" class="regpass" name="Gender" id="Female" value="Female"><label for="Male">Female</label></th>
+                        <th>&emsp;&emsp;&emsp;&emsp;</th>
+                        <th>Phone Number</th>
+                        <th><input type="text" class="regtext" name="phno"></th>
+                    </tr>
+                    </table>
+                    <table class="two">
+                    <tr class="reglogterms">
+                        <th><input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I hereby declare that I agree to the terms and conditions of Tradz. <a href="Terms.html">Click Here</a> to view the Terms and Conditions.<br><br></th></tr>
+                    <tr class="reglogterms">
+                    <th><input type="submit" class="button" name="Register with Tradz" value="Register with Tradz" id="submit"></th></tr>
+        </body>
+</html>
