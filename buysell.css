@@ -43,94 +43,62 @@ body
       transform: translateZ(0);
      will-change: transform;
 }
-.button {
+button {
   border: none;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display:inline-block;
   transition-duration: 0.4s;
+  margin-top:50px;
   cursor: pointer;
-}
-button.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
+  border-radius: 15px;
   width:250px;
+  padding:40px 30px;
   height:100px;
   font-style:georgia; 
-  font-size:50px;
+  font-size:40px;
   text-decoration:none;
+}
+button.button1 {
+ background-color: #4CAF50;
+  color: white;
 }
 
 button.button1:hover {
-  background-color: #4CAF50;
-  color: white;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
+  color: black; 
+  border: 2px solid #4CAF50;
+  
+ }
+
+button.button2:hover{
+  background-color: white; 
+  color: #008CBA; 
+  border: 2px solid #008CBA;
 }
 
 button.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
-}
-
-button.button2:hover {
   background-color: #008CBA;
   color: white;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
 }
 
-button.button3 {
+button.button3:hover{
   background-color: white; 
   color: black; 
   border: 2px solid #ff8c00;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
 }
 
 button.button3:hover {
   background-color: #ff8c00;
   color: white;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
 }
 
 button.button4 {
   background-color: white;
   color:black;
   border: 2px solid #483D8B;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
 }
 
 button.button4:hover {
   background-color: #483D8B;
   color: white;
-  width:250px;
-  height:100px;
-  font-style:georgia; 
-  font-size:50px;
-  text-decoration:none;
 }
