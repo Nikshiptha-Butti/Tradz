@@ -16,14 +16,14 @@ body
 }
 .topnav a
 {
-      float: left;
+      float:right;
       text-align: center;
-      padding: 20px 30px;
+      padding: 20px 10px;
       font-size: 25px;
-    text-decoration: none;
-    background-color:#a74f8b 0.6; 
-    color:white;
-    display:block;
+      text-decoration: none;
+      background-color:#a74f8b 0.6; 
+      color:white;
+      display:block;
 }
 .topnav a:hover
 {
@@ -59,46 +59,17 @@ button {
   font-size:40px;
   text-decoration:none;
 }
-button.button1 {
- background-color: #4CAF50;
-  color: white;
+
+.button1 {
+ background-color: #E6E6FA;
+  color:black;
+  text-decoration: none;
 }
 
 button.button1:hover {
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 5px solid #E6E6FA;
+  background-color:white;
   
  }
 
-button.button2:hover{
-  background-color: white; 
-  color: #008CBA; 
-  border: 2px solid #008CBA;
-}
-
-button.button2 {
-  background-color: #008CBA;
-  color: white;
-}
-
-button.button3:hover{
-  background-color: white; 
-  color: black; 
-  border: 2px solid #ff8c00;
-}
-
-button.button3:hover {
-  background-color: #ff8c00;
-  color: white;
-}
-
-button.button4 {
-  background-color: white;
-  color:black;
-  border: 2px solid #483D8B;
-}
-
-button.button4:hover {
-  background-color: #483D8B;
-  color: white;
-}

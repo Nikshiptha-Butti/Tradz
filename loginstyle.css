@@ -4,9 +4,8 @@ body
 }
 .topnav
 {
-    position: -webkit-sticky;
-    position: sticky;
-      background-color:#cc0000;
+    position:-webkit-sticky;
+    background-color:#cc0000;
     width:100%;
     overflow:hidden;
     top:0;
@@ -16,9 +15,10 @@ body
 }
 .topnav a
 {
+      position: -webkit-sticky;
       float: left;
       text-align: center;
-      padding: 20px 30px;
+      padding: 20px 10px;
       font-size: 25px;
     text-decoration: none;
     background-color:#a74f8b 0.6; 
@@ -36,7 +36,7 @@ body
     background-repeat: no-repeat;
     background-size:cover;
     width:100%;
-    height:700px;
+    height:300px;
     flex: 8%;
     background-attachment:fixed;
     -webkit-transform: translateZ(0);
@@ -86,6 +86,7 @@ body
     cursor: pointer;
     border:black;
     border-radius:10px;
+    text-decoration: none;
 
 }
 table.two
@@ -106,6 +107,15 @@ input[type=text].regtext
     width:300px;
     border:none;
     border-bottom:solid #cc0000;
+    font-family:Comic Sans;
+    font-weight:bold;
+    font-size:17;
+}
+input[type=email]
+{
+    width:225px;
+    border:none;
+    border:solid #cc0000;
     font-family:Comic Sans;
     font-weight:bold;
     font-size:17;
@@ -133,3 +143,5 @@ table.three
 {
     border-spacing:30px 15px;
 }
+
+  
