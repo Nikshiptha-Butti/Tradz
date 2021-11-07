@@ -16,10 +16,10 @@
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
-                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th><a href="Home.html">Home</a></th>
                 <th><a href="Register.html">Sign Up</a></th>
-                <th><a href="About.html">About</a></th>
+                <th><a href="home.html#about">About</a></th>
                 <th><a href="./buysell.php?val1=<?php echo $_GET['val1']?>">Dashboard</a></th>
                 <th><a href="loginpage.html">Logout</a></th>
                     </tr>
@@ -62,7 +62,9 @@
                  else
                  {
                       $query =mysqli_query($conn,"select propertyid,img1,price,area,location from property where price<='$price' and location='$location' and area>='$area' and status='Lease'");
-                      if(mysqli_num_rows($query)>0)
+                      $num=mysqli_num_rows($query);
+                      echo $num;
+                      if($num!=0)
                       {  
                           while($row = mysqli_fetch_assoc($query))
                           {
@@ -90,6 +92,7 @@
                     <?php
                     }
                   }
+                  else{ echo "<p style='font-size:30px;margin-left:150px;'> no records found</p>";}
                }
             }
             else

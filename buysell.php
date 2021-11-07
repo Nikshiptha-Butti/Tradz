@@ -18,6 +18,7 @@
         <th><a href="loginpage.html">Login</a></th>
         <th><a href="./profile.php?var=<?php echo $_GET['val1']?>">Profile</a></th>
         <th><a href="loginpage.html">Logout</a></th>
+        <th><a href="home.html#about">About</a></th>
         </tr> 
         </table>                             			
     </div>

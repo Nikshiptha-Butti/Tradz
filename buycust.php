@@ -15,11 +15,12 @@
                 <th><p style="color:#fff;font-size:50px;font-family:Monotype Corsiva;font-style:italic;">Tradz</p></th>
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th><a href="Home.html">Home</a></th>
                 <th><a href="Register.html">Register</a></th>
                 <th><a href="./buysell.php?val1=<?php echo $_GET['val1']?>">Dashboard</a></th>
                 <th><a href="loginpage.html">Logout</a></th>
-                <th><a href="homepage.html/#about">About</a></th>
+                <th><a href="home.html#about">About</a></th>
                     </tr>
                 </table>                             			
             </div>
@@ -59,7 +60,7 @@
                  }
                  else
                  {
-                      $query =mysqli_query($conn,"select propertyid,img1,price,area,location from property where price<='$price' and location='$location' and area>='$area' and status='$status'");
+                      $query =mysqli_query($conn,"select propertyid,img1,price,area,location from property where price<='$price' and location='$location' and area>='$area' and prop_type='$asset' and status='$status'");
                       if(mysqli_num_rows($query)>0)
                       {  
                           while($row = mysqli_fetch_assoc($query))
@@ -88,6 +89,10 @@
                     <?php
                     }
                   }
+                  else
+                  {
+                      echo "<p style='font-size:30px;margin-left:150px;'>No such property found</p>";
+                  }
                }
             }
             else
@@ -101,7 +106,7 @@
                  {
 					$query=mysqli_query($conn,"select propertyid,img1,price,area,location from property where status='Sale'");
                     $x=mysqli_num_rows($query);
-                    for($i=0;$i<3;$i++)
+                    for($i=0;$i<$x;$i++)
                     {
                         $row = mysqli_fetch_assoc($query)
                         ?>
