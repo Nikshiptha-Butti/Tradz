@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/assets/favicon.ico">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-        <body background="images/takerentback.png" style="background-size:cover;background-repeat: no-repeat;width:100%;height:100%">
+        <body background="images/buyback.jpg" style="background-size:cover;background-repeat: no-repeat;width:100%;height:100%">
             <div class="hi">
             <div class="topnav">
                 <table class="one">
@@ -15,12 +15,13 @@
                 <th><p style="color:#fff;font-size:50px;font-family:Monotype Corsiva;font-style:italic;">Tradz</p></th>
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
-                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+                <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
                 <th><a href="Home.html">Home</a></th>
                 <th><a href="Register.html">Sign Up</a></th>
                 <th><a href="About.html">About</a></th>
+                <th><a href="./buysell.php?val1=<?php echo $_GET['val1']?>">Dashboard</a></th>
                 <th><a href="loginpage.html">Logout</a></th>
-
                     </tr>
                 </table>                             			
             </div>

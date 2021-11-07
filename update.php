@@ -29,7 +29,7 @@
         }
         if($flag==0)
         {
-            $sql1 = "insert into user values(DEFAULT,'{$name}','{$email}','{$password}','$phno','$gender')";
+            $sql1 = "update user set Name='$name',email='$email',password='$password',phno='$phno',gender='$gender' where email='$email'";
             $query1 =mysqli_query($conn,$sql1);
             if($query1)
             {

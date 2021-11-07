@@ -14,7 +14,7 @@
                 $var1=$row['email'];
                 $var2=$row['password'];
                 echo "<script>alert('Login Successful');</script>";
-                echo "<script>location.href='buysell.php?val1=$var1 & val2=$var2';</script>";
+                echo "<script>location.href='./buysell.php?val1=$var1'</script>";
              }	
              else
              {

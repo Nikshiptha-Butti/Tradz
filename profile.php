@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="loginstyle.css">
     </head>
-	<body  style="background-color:#ADD;background-size:cover;background-repeat: no-repeat;width:100%;height:100%">
+	<body background="images/profileback.jpg" style="background-color:#ADD;background-size:cover;background-repeat: no-repeat;width:100%;height:100%">
 		<div class="hi">
 		<div class="topnav">
             <table class="one">
@@ -12,12 +12,13 @@
             <th><p style="color:#fff;font-size:50px;font-family:Monotype Corsiva;font-style:italic;">Tradz</p></th>
             <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
             <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
-            <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+            <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
 			<th><a href="Home.html">Home</a></th>
 		    <th><a href="Register.html">Sign Up</a></th>
 			<th><a href="homepage.html/#about">About</a></th>
             <th><a href="Logout.html">Logout</a></th>
             <th><a href="./editprofile.php?var=<?php echo $_GET["var"]?>">Edit_Profile</a></th>
+            <th><a href="./buysell.php?val1=<?php echo $_GET['var']?>">Dashboard</a></th>
             </tr> 
             </table>                             			
 		</div>
@@ -40,11 +41,11 @@
                     {
                     ?>
                     <b><p style="font-size:50px;text-align:center;">User Profile</p></b>
-                        <table style="width:100%;cell-padding:5px;text-align:left;margin-left:150px;font-size:25px;color:#000;">
+                        <table style="width:60%;text-align:left;margin-left:500px;font-size:25px;color:#000;">
                         <tr><th>Name</th><th>:</th><th><?php echo $row['Name']; ?></th></tr>
                         <tr><th>Email Id</th><th>:</th><th><?php echo $row['email']; ?></th</tr>
                         <tr><th>Password</th><th>:</th><th><?php echo $row['password']; ?></th</tr>
-                        <tr><th>Email Id</th><th>:</th><th><?php echo $row['gender']; ?></th</tr>
+                        <tr><th>Gender</th><th>:</th><th><?php echo $row['gender']; ?></th</tr>
                         <tr><th>Contact No</th><th>:</th><th><?php echo $row['phno']; ?></th></tr>
                         </table>
                 <?php
@@ -52,6 +53,8 @@
                 }
             }
         }
+        
                 ?>
+                
     </body>
     </html>

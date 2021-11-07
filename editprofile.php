@@ -11,7 +11,7 @@
          <th><p style="color:#fff;font-size:50px;font-family:Monotype Corsiva;font-style:italic;">Tradz</p></th>
          <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
      <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
-     <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+     <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
          <th><a href="Home.html">Home &emsp;</a></th>
          <th><a href="loginpage.html">Login &emsp;</a></th>
          <th><a href="About.html">About &emsp;</a></th>
@@ -20,7 +20,6 @@
          </table>                             			
      </div>
      <?php
-     echo $_GET["var"];
          if(isset($_GET["var"]))
          {
              $data = $_GET["var"];
@@ -38,7 +37,7 @@
                     {
                     ?>
  <div  class="reglog">
-     <p style="font-size:40px;font-family:Comic Sans;text-align:center;">Register</p>
+     <p style="font-size:40px;font-family:Comic Sans;text-align:center;">Edit your Details</p>
      <form method="post" action="update.php">
          <table class="three" align="center">
              <tr class="reglog">

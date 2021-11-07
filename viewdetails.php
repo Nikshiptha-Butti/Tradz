@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="loginstyle.css">
     </head>
-	<body  style="background-color:#ADD;background-size:cover;background-repeat: no-repeat;width:100%;height:100%">
+	<body background="images/viewdetails.jpg" style=" background-color:#fadadd;background-size:cover;background-repeat: no-repeat;width:100%;height:100%">
 		<div class="hi">
 		<div class="topnav">
             <table class="one">
@@ -20,7 +20,6 @@
             </tr> 
             </table>                             			
 		</div>
-        <div>
         <?php
          if(isset($_GET["var"]))
          {
@@ -38,8 +37,11 @@
                     while($row = mysqli_fetch_assoc($query))
                     {
                     ?>
-                    <div style="background-color:#fff">
+                    <div>
                     <table width="100%">
+                        <br>
+                        <br>
+                        <br>
                     <tr>
                         <th><img src="images/<?php echo $row['img1']?>" style="width:300px;height:300px;"></th>
                         <th><img src="images/<?php echo $row['img2']?>" style="width:300px;height:300px;"></th>
@@ -47,13 +49,19 @@
                         <th><img src="images/<?php echo $row['img4']?>" style="width:300px;height:300px;"></th>     
                     <tr>
                     </table>
-                    <div align="center">
+                    </div>
+                    <div align="center" background="#fff">
+                    <br>
+                    <br>
+                    <br>
                     <table align="center" style="float:center;">
                     <tr align="center"><video src="images/<?php echo $row['video']?>" controls width='800px' height='600px' ></video></tr>
-                    </table>
+                    <tr><p style="font-size:20px;"><b>Watch the video to know more!</b></p>
+                </table>
                      <br><br><br>
+                    
                     </div>
-                    </div>
+                    <div style="background-image:images/viewdetails.jpg;height:400px;width:100%;">
                     <b><p style="font-size:25px;"> Property details</p></b>
                     <table style="width:65%;cell-padding:2px;text-align:left;margin-left:10px;font-size:25px;color:#000;">
                         <tr><th>Price</th><th>:</th><th><?php echo $row['price']; ?>/-</th></tr>

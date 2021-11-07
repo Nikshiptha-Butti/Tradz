@@ -52,8 +52,8 @@ button {
   margin-top:50px;
   cursor: pointer;
   border-radius: 15px;
-  width:250px;
-  padding:40px 30px;
+  width:300px;
+  padding:40px 40px;
   height:100px;
   font-style:georgia; 
   font-size:40px;
@@ -61,15 +61,57 @@ button {
 }
 
 .button1 {
- background-color: #E6E6FA;
+ background-color:#fff4bd;
   color:black;
+  line-height:20px;
   text-decoration: none;
 }
 
 button.button1:hover {
   color: black; 
-  border: 5px solid #E6E6FA;
+  border: 10px solid #00008b;
   background-color:white;
+  font-size:28px;
   
  }
+ .button2 {
+  background-color:#fff4bd;
+   color:black;
+   line-height:20px;
+   text-decoration: none;
+ }
+ 
+ button.button2:hover {
+   color: black; 
+   border: 10px solid #00008b;
+   background-color:white;
+   font-size:28px;
+   
+  }
+  .button3 {
+    background-color:#fff4bd;
+     color:black;
+     line-height:20px;
+     text-decoration: none;
+   }
+   
+   button.button3:hover {
+     color: black; 
+     border: 10px solid #00008b;
+     background-color:white;
+     font-size:25px;
+    }
+    .button4 {
+      background-color:#fff4bd;
+       color:black;
+       line-height:25px;
+       text-decoration: none;
+     }
+     
+     button.button4:hover {
+       color: black; 
+       border: 7px solid #00008b;
+       background-color:white;
+       font-size:25px;
+      }
 
