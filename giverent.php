@@ -2,10 +2,10 @@
 <head>
      <link rel="stylesheet" href="sell.css">
     </head>
-<body background="images/giverenthtmlback.jpg" style="background-repeat:no-repeat;background-position:center;background-size:cover;height:1200px;">    
+<body background="images/giverenthtmlback.jpg" style="background-repeat:no-repeat;background-size:cover;width:100%;height:1200px;">    
         <div class="login-box">
 			 <h2>ENTER DETAILS</h2>
-			  <form method="post" action="sell.php">
+			  <form method="post" action="./sell.php?val1=<?php echo $_GET['val1']?>">
 			  <div class="user-box">
 					<input type="email" name="email" required />
 					<label>Registered Email</label>
@@ -29,7 +29,7 @@
             <label>Area in yards</label>
           </div>
           <div class="user-box">
-            <input type="text" name="status" value="Sale" readonly>
+            <input type="text" name="status" value="Lease" readonly>
             </div>
           <div class="user-box">
             <input type="text" name="description" required />
@@ -55,7 +55,7 @@
             <input type="file" name="video" id="video">
             <label>Upload Video</label>
           </div>
-          <a href="">
+          <a href="./sell.php?val1=<?php echo $_GET['val1']?>">
             <span></span>
             <span></span>
             <span></span>

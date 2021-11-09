@@ -15,7 +15,6 @@
             <th>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
 			<th><a href="Home.html">Home</a></th>
 		    <th><a href="Register.html">Sign Up</a></th>
-			<th><a href="homepage.html/#about">About</a></th>
             <th><a href="Logout.html">Logout</a></th>
             <th><a href="home.html#about">About</a></th>
             </tr> 
