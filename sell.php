@@ -24,7 +24,8 @@
             if($query1)
             {
                 echo "<script>alert('Thank you for uploading new property');</script>";
-                echo "<script>window.location.href='buysell.html';</script>";
+                $val1= $_GET['val1'];
+                echo "<script>window.location.href='./buysell.php?val1=';</script>";
             }
     }
 ?>

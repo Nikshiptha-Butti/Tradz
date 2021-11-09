@@ -24,8 +24,8 @@
     </div>
     <table style="margin-left:auto;margin-right:auto; width:70%;padding:30px 30px;">
         <tr><th><button class="button1"><a href="./buycust.php?val1=<?php echo $_GET['val1']?>" style="text-decoration:none;">Buy</a></button>
-        <button class="button2"><a href="./sellcust.html?val1=<?php echo $_GET['val1']?>" style="text-decoration:none;">Sell</a></button></th></tr>
-        <tr><th><button class="button3"><a href="./giverent.html?val1=<?php echo $_GET['val1']?>" style="text-decoration:none;">Give Rent</a></button>
+        <button class="button2"><a href="./sellcust.php?val1=<?php echo $_GET['val1']?>" style="text-decoration:none;">Sell</a></button></th></tr>
+        <tr><th><button class="button3"><a href="./giverent.php?val1=<?php echo $_GET['val1']?>" style="text-decoration:none;">Give Rent</a></button>
     <button class="button4"><a href="./takerent.php?val1=<?php echo $_GET['val1']?>" style="text-decoration:none;">Take Rent</a></button></th></tr>
     </table>
     </div>
